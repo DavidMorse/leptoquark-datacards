@@ -4,10 +4,12 @@ Datacards for CMS LQ mg5_aMC@NLO production for legacy analyses.
 LQ_S3: uses the scalar S3 LQ model from the Leptoquark Toolbox: https://lqnlo.hepforge.org, https://arxiv.org/abs/1801.07641
 
 S3 is a triplet scalar model, with the following resonances:
-
+```
 S3p23: +2/3 charge leptoquark
 S3m13: -1/3 charge leptoquark
 S3m43: -4/3 charge leptoquark
+```
+The mass of the resonances can be controlled with a single parameter MS3.
 
 From these three, all combinations of LQ->l+q decays can be made, as long as charge conservation is obeyed.
 
