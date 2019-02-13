@@ -1,7 +1,7 @@
 # leptoquark-datacards
 Datacards for CMS LQ mg5_aMC@NLO production for legacy analyses.
 
-LQ_S3: uses the scalar S3 LQ model from the Leptoquark Toolbox: https://lqnlo.hepforge.org, arxiv.org/abs/1801.07641
+LQ_S3: uses the scalar S3 LQ model from the Leptoquark Toolbox: https://lqnlo.hepforge.org, https://arxiv.org/abs/1801.07641
 
 S3 is a triplet scalar model, with the following resonances:
 
@@ -14,6 +14,7 @@ From these three, all combinations of LQ->l+q decays can be made, as long as cha
 The model has the following Yukawa couplings, defined in the run_card:
 
 BLOCK YUKS3LL # 
+
       1 1 3.000000e-01 # yll1x1
       1 2 3.000000e-01 # yll1x2
       1 3 3.000000e-01 # yll1x3
@@ -29,10 +30,15 @@ The format is yll(quark family)x(lepton family). You can set whatever value you 
 For example:
 
 yll1x1=u/d + e/nue
+
 yll1x2=u/d + mu/numu
+
 yll1x3=u/d + tau/nutau
+
 yll2x1=c/s + e/nue
+
 etc…..
+
 yll3x3=b/t + tau/nutau
 
 The explicit decays can be found in particles.py:
