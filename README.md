@@ -28,21 +28,16 @@ BLOCK YUKS3LL #
 The format is yll(quark family)x(lepton family). You can set whatever value you like for the decay in question and set the rest to zero. Or you can just leave the others non-zero - as long as you don't allow those decays it shouldn't matter.
 
 For example:
-
+```
 yll1x1=u/d + e/nue
-
 yll1x2=u/d + mu/numu
-
 yll1x3=u/d + tau/nutau
-
 yll2x1=c/s + e/nue
-
 etc…..
-
 yll3x3=b/t + tau/nutau
-
+```
 The explicit decays can be found in particles.py:
-
+```
 Decay_S3m13 = Decay(name = 'Decay_S3m13',
                     particle = P.S3m13,
                     partial_widths = {(P.b,P.ve):'((-MB**2 + MS3**2)*(-3*MB**2*yLL3x1**2 + 3*MS3**2*yLL3x1**2))/(48.*cmath.pi*abs(MS3)**3)',
@@ -87,4 +82,4 @@ Decay_S3p23 = Decay(name = 'Decay_S3p23',
                                       (P.u,P.ve):'(MS3**4*yLL1x1**2)/(8.*cmath.pi*abs(MS3)**3)',
                                       (P.u,P.vm):'(MS3**4*yLL1x2**2)/(8.*cmath.pi*abs(MS3)**3)',
                                       (P.u,P.vt):'(MS3**4*yLL1x3**2)/(8.*cmath.pi*abs(MS3)**3)'})
-
+```
