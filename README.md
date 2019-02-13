@@ -38,7 +38,7 @@ yll2x1=c/s + e/nue
 etc…..
 yll3x3=b/t + tau/nutau
 ```
-The explicit decays can be found in particles.py:
+The explicit decays and l-q pairings can be found in particles.py:
 ```
 Decay_S3m13 = Decay(name = 'Decay_S3m13',
                     particle = P.S3m13,
