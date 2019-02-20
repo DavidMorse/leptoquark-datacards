@@ -9,7 +9,24 @@ S3p23: +2/3 charge leptoquark
 S3m13: -1/3 charge leptoquark
 S3m43: -4/3 charge leptoquark
 ```
-The mass of the resonances can be controlled with a single parameter MS3.
+
+The mass of the 3 resonances can be controlled with a single parameter MS3.
+
+So, for example, to make pair production of LQ -> b + mu, you could do:
+
+generate p p > S3m43 S3m43* , ( S3m43 > mu- b ) , (S3m43* > mu+ b~)
+
+Similarly for LQ -> b + tau:
+
+generate p p > S3m43 S3m43* , ( S3m43 > ta- b ) , (S3m43* > ta+ b~)
+
+Similarly you could do incusive production of LQ -> b + tau / t + taunu, where you need to use 2 different charged LQs:
+```
+generate p p > S3m43 S3m43* ,    ( S3m43 > ta- b ) , (S3m43* > ta+ b~)
+add process p p > S3m43 S3p23* , ( S3m43 > ta- b ) , (S3p23* > vt~ t~)
+add process p p > S3p23 S3m43* , ( S3m43 > vt t ) , (S3m43* > ta+ b~)
+add process p p > S3p23 S3p23* , ( S3p23 > vt t ) , (S3p23* > vt t)
+```
 
 From these three, all combinations of LQ->l+q decays can be made, as long as charge conservation is obeyed.
 
