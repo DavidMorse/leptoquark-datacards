@@ -13,13 +13,13 @@ S3m43: -4/3 charge leptoquark
 The mass of the 3 resonances can be controlled with a single parameter MS3.
 
 So, for example, to make pair production of LQ -> b + mu, you could do:
-
+```
 generate p p > S3m43 S3m43* , ( S3m43 > mu- b ) , (S3m43* > mu+ b~)
-
+```
 Similarly for LQ -> b + tau:
-
+```
 generate p p > S3m43 S3m43* , ( S3m43 > ta- b ) , (S3m43* > ta+ b~)
-
+```
 Similarly you could do incusive production of LQ -> b + tau / t + taunu, where you need to use 2 different charged LQs:
 ```
 generate p p > S3m43 S3m43* ,    ( S3m43 > ta- b ) , (S3m43* > ta+ b~)
