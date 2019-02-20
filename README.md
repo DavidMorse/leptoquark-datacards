@@ -24,8 +24,8 @@ Similarly you could do incusive production of LQ -> b + tau / t + taunu, where y
 ```
 generate p p > S3m43 S3m43* ,    ( S3m43 > ta- b ) , (S3m43* > ta+ b~)
 add process p p > S3m43 S3p23* , ( S3m43 > ta- b ) , (S3p23* > vt~ t~)
-add process p p > S3p23 S3m43* , ( S3m43 > vt t ) , (S3m43* > ta+ b~)
-add process p p > S3p23 S3p23* , ( S3p23 > vt t ) , (S3p23* > vt t)
+add process p p > S3p23 S3m43* , ( S3m43 > vt t  ) , (S3m43* > ta+ b~)
+add process p p > S3p23 S3p23* , ( S3p23 > vt t  ) , (S3p23* > vt t  )
 ```
 
 From these three, all combinations of LQ->l+q decays can be made, as long as charge conservation is obeyed.
