@@ -1,5 +1,5 @@
 # leptoquark-datacards
-Datacards for CMS LQ mg5_aMC@NLO production for legacy analyses.
+Datacards for CMS LQ mg5_aMC@NLO production for Run2 and Run3 analyses.
 
 LQ_S3: uses the scalar S3 LQ model from the Leptoquark Toolbox: https://lqnlo.hepforge.org, https://arxiv.org/abs/1801.07641
 
