@@ -1,0 +1,8 @@
+#import model /afs/cern.ch/work/d/dmorse/work/leptoQuark/lheTesting/lqMadGraph2019/genproductions/bin/MadGraph5_aMCatNLO/LQ_S3/NLO_MODEL/NLO_LQ_S3
+import model  NLO_LQ_S3  # Import the leptoquark model
+define p = p b b~
+define j = g u c d s u~ c~ d~ s~ b b~
+generate p p > S3m43 S3m43*
+add process p p > S3p23 S3p23*
+add process p p > S3m13 S3m13*
+output LQ_inclusive_pair_madgraph_LO_13p6_M300 -nojpeg
